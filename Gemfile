@@ -16,7 +16,7 @@ gem 'haml-rails'
 gem 'simple_form'
 gem 'pry-rails'
 gem 'annotate'
-
+gem 'carrierwave'
 
 group :development, :test do
   gem 'byebug', platform: :mri
