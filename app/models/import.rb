@@ -10,5 +10,7 @@
 #
 
 class Import < ApplicationRecord
-  has_many :contacts
+  has_many :contacts, dependent: :destroy
+  has_many :list_contacts, dependent: :destroy
+  mount_uploader :attachment, AttachmentUploader
 end

@@ -1,0 +1,27 @@
+%h1
+  Contacts
+
+%div
+  %table.table.table-bordered.table-striped
+    %thead
+      %tr
+        %th
+          First name
+        %th
+          Last name
+        %th
+          Email
+        %th
+          Reason
+
+    %tbody
+      -@contacts.each do |contact|
+        %tr
+          %td
+            =contact.first_name
+          %td  
+            =contact.last_name 
+          %td  
+            =contact.email
+          %td  
+            =contact.reason 

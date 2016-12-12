@@ -18,6 +18,7 @@
         .navbar-collapse.collapse.navbar-responsive-collapse
           %ul.nav.navbar-nav
             %li= link_to "Home", root_path
+            %li= link_to "Contacts list", list_contacts_path
 
     .container
       -if !flash[:notice].blank?

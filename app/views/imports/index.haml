@@ -1,4 +1,56 @@
 %h1
-  Contacts list
+  Contacts list 
+  =link_to "New Import", new_import_path, class: "btn btn-primary"
 
-=link_to 'New import', new_import_path
+%h2
+  Valid contacts
+
+%div
+  %table.table.table-bordered.table-striped
+    %thead
+      %tr
+        %th
+          First name
+        %th
+          Last name
+        %th
+          Email
+
+    %tbody
+    -unless @contacts.empty?
+      -@contacts.each do |contact|
+        %tr
+          %td
+            =contact.first_name
+          %td  
+            =contact.last_name 
+          %td  
+            =contact.email
+
+%h2
+  Invalid contacts
+  
+%div
+  %table.table.table-bordered.table-striped
+    %thead
+      %tr
+        %th
+          First name
+        %th
+          Last name
+        %th
+          Email
+        %th
+          Reason
+
+    %tbody
+      -@invalid_contacts.each do |contact|
+        %tr
+          %td
+            =contact.first_name
+          %td  
+            =contact.last_name 
+          %td  
+            =contact.email
+          %td  
+            =contact.reason 
