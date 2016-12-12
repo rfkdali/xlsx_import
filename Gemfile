@@ -17,10 +17,12 @@ gem 'simple_form'
 gem 'pry-rails'
 gem 'annotate'
 gem 'carrierwave'
+gem 'roo'
 
 group :development, :test do
   gem 'byebug', platform: :mri
   gem 'rspec-rails'
+  gem 'ffaker'
 end
 
 group :development do
@@ -36,7 +38,6 @@ group :test do
   gem 'capybara'
   gem 'database_cleaner'
   gem 'rails-controller-testing'
-  gem 'ffaker'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
