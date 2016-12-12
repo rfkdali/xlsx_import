@@ -14,6 +14,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootstrap-sass'
 gem 'haml-rails'
 gem 'simple_form'
+gem 'pry-rails'
 
 
 group :development, :test do
