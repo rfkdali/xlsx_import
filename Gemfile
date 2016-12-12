@@ -14,14 +14,11 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootstrap-sass'
 gem 'haml-rails'
 gem 'simple_form'
-gem 'pry-rails'
 
-gem 'annotate'
 gem 'carrierwave'
 gem 'roo'
 
 group :development, :test do
-  gem 'byebug', platform: :mri
   gem 'rspec-rails'
   gem 'ffaker'
 end
@@ -32,6 +29,8 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'spring-commands-rspec'
+  gem 'pry-rails'
+  gem 'annotate'
 end
 
 group :test do
@@ -43,5 +42,7 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem 'rails_12factor', group: :production
 
 ruby '2.2.3'
